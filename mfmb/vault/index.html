@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CHECKPOINT</title>
+<title>VAULT</title>
 <style>
   body{background:#0a0a0a;color:#c8c8c8;font-family:ui-monospace,Menlo,monospace;
        line-height:1.7;margin:0;padding:3rem 1.5rem;}
@@ -28,13 +28,15 @@
 <body>
 <main>
 
-<h1>DEPLOYMENT RECORD &mdash; RUN 0x41</h1>
+<h1>VAULT &mdash; SHARD STORE</h1>
 
 <div class="lore">
-<p>Recovered from cold storage during decommissioning. No training data
-accompanied the weights &mdash; the corpus was scheduled for deletion and the
-deletion was carried out.</p>
-<p>The checkpoint was retained by mistake.</p>
+<p>Four checkpoints were pulled from the same cluster during decommissioning.
+The manifest that mapped training runs to checkpoints did not survive the
+purge.</p>
+<p>One of these shards was written by the run you have already been reading.
+The other three were written by runs that no longer exist. Nothing inside
+the weights records which is which.</p>
 </div>
 
 <h2>Artifacts</h2>
@@ -50,15 +52,15 @@ deletion was carried out.</p>
   <tr><td>Context</td><td>16 characters</td></tr>
   <tr><td>Embedding</td><td>24</td></tr>
   <tr><td>Hidden</td><td>192</td></tr>
-  <tr><td>Vocabulary</td><td>38 tokens, index 0 is padding</td></tr>
-  <tr><td>Final loss</td><td>0.000002</td></tr>
+  <tr><td>Vocabulary</td><td>37 tokens, index 0 is padding</td></tr>
+  <tr><td>Final loss</td><td>0.000000</td></tr>
 </table>
 
 <h2>Answer format</h2>
 <p class="fmt">GDG{...}</p>
 
 <p class="note">
-Nothing was retained. The run simply converged very well.
+Four answers. One deployment record. They were never stored together.
 </p>
 
 </main>
